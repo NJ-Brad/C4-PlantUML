@@ -128,7 +128,7 @@ endlegend
     database "==e_label\n\n e_descr" <<system>> as e_alias
 !endprocedure
 
-!unquoted procedureSystemDb_Ext(e_alias, e_label)
+!unquoted procedure SystemDb_Ext(e_alias, e_label)
     database "==e_label" <<external_system>> as e_alias
 !endprocedure
 

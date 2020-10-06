@@ -60,13 +60,15 @@ skinparam defaultFontName "Comic Sans MS"
 center footer <font color=red>Warning:</font> Created for discussion, needs to be validated
 !endprocedure
 
-!procedure LAYOUT_TOP_DOWN()
-    top to bottom direction
-!endprocedure
-
-!procedure LAYOUT_LEFT_RIGHT()
-    left to right direction
-!endprocedure
+!define LAYOUT_TOP_DOWN top to bottom direction
+!define LAYOUT_LEFT_RIGHT left to right direction
+'!procedure LAYOUT_TOP_DOWN()
+'    top to bottom direction
+'!endprocedure
+'
+'!procedure LAYOUT_LEFT_RIGHT()
+'    left to right direction
+'!endprocedure
 
 ' Boundaries
 ' ##################################
