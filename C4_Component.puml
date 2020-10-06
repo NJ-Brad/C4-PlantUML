@@ -47,7 +47,7 @@ skinparam database<<external_component>> {
 ' Layout
 ' ##################################
 
-!definelong LAYOUT_WITH_LEGEND
+!procedure LAYOUT_WITH_LEGEND()
 hide stereotype
 legend right
 |=              |= Type |
@@ -60,7 +60,7 @@ legend right
 |<EXTERNAL_CONTAINER_BG_COLOR>   | external container |
 |<EXTERNAL_COMPONENT_BG_COLOR>   | external component |
 endlegend
-!enddefinelong
+!endprocedure
 
 ' Elements
 ' ##################################
