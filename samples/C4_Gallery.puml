@@ -1,0 +1,33 @@
+@startuml Gallery
+!include ../C4_Component.puml
+
+Component(component, "Component", "tech") [[http://example.com/Component]]
+Component(component_desc, "Component", "tech", "desc") [[http://example.com/Component_desc]]
+ComponentDb(componentdb, "ComponentDb", "tech") [[http://example.com/ComponentDb]]
+ComponentDb(componentdb_desc, "ComponentDb", "tech", "desc") [[http://example.com/ComponentDb_desc]]
+
+!include ../C4_Container.puml
+
+Container(container, "Container", "tech") [[http://example.com/Container]]
+Container(container_desc, "Container", "tech", "desc") [[http://example.com/Container_desc]]
+ContainerDb(containerdb, "ContainerDb", "tech") [[http://example.com/ContainerDb]]
+ContainerDb(containerdb_desc, "ContainerDb", "tech") [[http://example.com/ContainerDb_desc]]
+
+Container_Boundary(container_boundary, "Container Boundary") [[http://example.com/Container_Boundary]] {
+ foo --> bar
+}
+
+!include ../C4_Context.puml
+Person(person, "Person") [[http://example.com/Person]]
+Person(person_desc, "Person", "desc") [[http://example.com/Person_desc]]
+Person_Ext(person_ext, "Person_Ext") [[http://example.com/Person_Ext]]
+Person_Ext(person_ext_desc, "Person_Ext", "desc") [[http://example.com/Person_Ext_desc]]
+System(system, "System") [[http://example.com/System]]
+System(system_desc, "System", "desc") [[http://example.com/System_desc]]
+System_Ext(system_ext, "System_Ext") [[http://example.com/System_Ext]]
+System_Ext(system_ext_desc, "System_Ext", "desc") [[http://example.com/System_Ext_desc]]
+SystemDb(systemdb, "SystemDb") [[http://example.com/SystemDb]]
+SystemDb(systemdb_desc, "SystemDb", "desc") [[http://example.com/SystemDb_desc]]
+SystemDb_Ext(systemdb_ext, "SystemDb_Ext") [[http://example.com/SystemDb_Ext]]
+SystemDb_Ext(systemdb_ext_desc, "SystemDb_Ext", "desc") [[http://example.com/SystemDb_Ext_desc]]
+@enduml
