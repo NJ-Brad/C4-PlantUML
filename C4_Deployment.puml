@@ -45,5 +45,8 @@ endlegend
 ' PlantUML does not support automatic line breaks of container, if e_techn is very long insert line breaks with 
 ' "</size>\n<size:TECHN_FONT_SIZE>"
 !unquoted procedure Node(e_alias, e_label, e_techn)
-    rectangle "==e_label\n<size:TECHN_FONT_SIZE>[e_techn]</size>" <<node>> as e_alias
+'   rectangle "==e_label\n<size:TECHN_FONT_SIZE()>[e_techn]</size>" <<node>> as e_alias
+    'rectangle "==e_label\n[e_techn]" <<node>> as e_alias
+  rectangle "==e_label\n<size:$TECHN_FONT_SIZE>[e_techn]</size>" <<node>> as e_alias
 !endprocedure
+
