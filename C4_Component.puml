@@ -15,7 +15,9 @@
 #85BBF0
 !endprocedure
 
-!define EXTERNAL_COMPONENT_BG_COLOR #BBBBBB
+!procedure EXTERNAL_COMPONENT_BG_COLOR()
+#BBBBBB
+!endprocedure
 
 ' Styling
 ' ##################################
